@@ -1,0 +1,21 @@
+body {
+    background-color: #ddeeaa;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;/* text-align à cause d'internet explorer (les ancinnes versions ie)*/
+    font-size: 0.8em;
+    /* font: 0.8 'Trebuchet MS', helvetica, sans-serif; raccourci pour déclarer font-size et font-family*/
+    font-family: 'Trebuchet MS', helvetica, sans-serif;
+}
+#conteneur{
+      /* margin 0 et auto centrer le conteneur dans la page - ATTENTION a donner une largeur*/
+    margin: 0 auto;
+    width: 770px;
+    background-color: white;
+    border: 2px solid #aabb44;
+    text-align: left;
+}
+header h1{/*hauter du h1 dans le header*/
+    height: 250px;
+    /* background-image: url(../img/apple.jpg); */
+}
