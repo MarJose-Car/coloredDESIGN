@@ -31,6 +31,45 @@
             background-repeat: no-repeat;
             background-position: left bottom; */
         }
+        header h1 a {
+            width: 400px;
+            height: 70px;
+            /* dès l'instant ou on change d'inline il est préférable de mettre des tailles largeur et/ou hauteur à l'élément */
+            display: block;
+            background: url(img/title.gif) no-repeat;
+             /* pour masquer le text */
+            text-indent: -5000px;
+            position: relative;
+            left: 350px;
+            top: 15px;
+
+        }
+        ul#menu {
+            height: 35px;
+            margin: 0;
+            padding: 0;
+            background: url(img/bg_menu.gif) repeat-x 0 -25px;
+            list-style-type: none;
+        }
+        ul#menu li {
+            text-align: center;
+            float: left;
+        }
+        ul#menu li a {
+            width: 130px;
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 25px;
+            color: #fff;
+            border-right: 2px solid #deea;
+            letter-spacing: 2px;
+        }
+        ul#menu li a:hover {
+            background: url(img/bg_menu.gif) repeat-x 0 0;
+
+        }
         main {
             /* padding pour main afin de coler le contenu dans main et le laisser la place à l'image en arrière plan */
             padding: 0 30px 0 100px;
@@ -83,7 +122,8 @@
                  <!--ul>li*5{Etape}-->
                  <!-- nav>ul>li*5>a[title]{Etape n°$} raccourci-->
                  <!-- ALT+W raccourci pour inserer une balise dans dans le contenu déjà existant-->
-                     <ul>
+                 <!--on rajoute id="menu" à notre ul qui sert à la navigation-->
+                     <ul id="menu"> 
                          <li><a href="etape1.html" title="Colored Design">&Eacute;tape n°1</a></li>
                          <li><a href="etape2.html" title="Colored Design">&Eacute;tape n°2</a></li>
                          <li><a href="etape3.html" title="Colored Design">&Eacute;tape n°3</a></li>
@@ -94,13 +134,13 @@
             </header>
              <main>
                  <!-- main - contenu principal -->
-                 <h2>Un Sous-Titre 1 /// &Eacute;tape n°3</h2>
+                 <h2>Un Sous-Titre 1 /// &Eacute;tape n°4</h2>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.</p><br>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.orem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.</p><br>
-                 <h2>Un Sous-Titre 2 /// &Eacute;tape n°3</h2>
+                 <h2>Un Sous-Titre 2 /// &Eacute;tape n°4</h2>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.</p><br>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.orem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat <a href="etape1.html">minus minima cum ipsum pariatur dolores debitis,</a> hic consequatur doloremque excepturi iste. Blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.</p><br>
-                 <h2>Un Sous-Titre 3 /// &Eacute;tape n°3</h2>
+                 <h2>Un Sous-Titre 3 /// &Eacute;tape n°4</h2>
                  <h3>Sous-titre 3</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.orem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.orem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.orem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.orem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse voluptas natus corrupti accusantium qui numquam placeat minus minima cum ipsum pariatur dolores debitis, hic consequatur doloremque excepturi iste. Blanditiis.</p><br>
                  <footer>
