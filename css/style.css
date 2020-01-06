@@ -2,20 +2,110 @@ body {
     background-color: #ddeeaa;
     margin: 10px 0;
     padding: 0;
-    text-align: center;/* text-align à cause d'internet explorer (les ancinnes versions ie)*/
-    font-size: 0.8em;
+    text-align: center;/* text-align à cause d'internet explorer (les anciennes versions ie)*/
+    /* font-size: 0.8em; */
     /* font: 0.8 'Trebuchet MS', helvetica, sans-serif; raccourci pour déclarer font-size et font-family*/
-    font-family: 'Trebuchet MS', helvetica, sans-serif;
+    /* font-family: 'Trebuchet MS', helvetica, sans-serif; */
+    font: 0.8em'PT Sans', sans-serif;
 }
 #conteneur{
-      /* margin 0 et auto centrer le conteneur dans la page - ATTENTION a donner une largeur*/
+    /* margin 0 et auto centrer le conteneur dans la page - ATTENTION a donner une largeur*/
     margin: 0 auto;
     width: 770px;
     background-color: white;
     border: 2px solid #aabb44;
     text-align: left;
 }
-header h1{/*hauter du h1 dans le header*/
-    height: 250px;
-    /* background-image: url(../img/apple.jpg); */
+header h1{/*hauter du h1 dans le header qui permet de mettre l'image en fond, la taille est dictée par ma hauteur de l'image*/
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left bottom;/*version raccourcie - top ou bottom pour l'image dans le h1*/
+    /* background-image: url(img/apple.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom; */
+}
+header h1 a {
+    /*on donne des dimensionsau lien chose possible grâce à la propriété display-block qui transforme le lien en élément de type block auquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les même dimensions que le cadre ainsi créé*/
+    width: 400px;
+    height: 70px; 
+    /* dès l'instant ou on change d'inline il est préférable de mettre des tailles largeur et/ou hauteur à l'élément */
+    display: block;
+    background: url(../img/title.gif) no-repeat;
+     /* pour masquer le text en dehors de la page*/
+    text-indent: -5000px;
+    position: relative;
+    left: 350px;
+    top: 15px;
+
+}
+ul#menu {
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+    /*on met l'image de font avec un déc    l   ge de 25 pixels vers le haut*/
+    list-style-type: none;
+}
+ul#menu li {
+    /*on rend les li flottant pour les afficher horizontalement*/
+    text-align: center;
+    float: left;
+}
+ul#menu li a {
+    width: 130px;
+    /*grâva à la propriété display:block on peut dimensionner les a*/
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 25px;
+    color: #fff;
+    border-right: 2px solid #deea;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+ul#menu li a:hover {
+    /*on décale l'image de fon au passage de la souris ou au survol de la souris, ce qui fait une "animation"*/
+    background: url(../img/bg_menu.gif) repeat-x 0 0;
+
+}
+main {
+    /* padding pour main afin de coler le contenu dans main et le laisser la place à l'image en arrière plan */
+    padding: 0 30px 0 100px;
+    background: url(../img/bg_page.gif) no-repeat left top;
+    /*on créé un espace à gauche et à droite de l'image*/
+    background-position: 15px 15px;
+    border-bottom: 1px solid #9b2;
+}
+main h2 {
+    padding-left: 25px;
+    font-size: 1.4em;
+    color: #9b2;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+    border-bottom: 1px solid #9b2;
+    font-size: 1.4em;
+    line-height: 25px;
+}
+main h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 3px solid #9b2;
+    border-left: 3px solid #9b2;
+    color: #9b2;
+}
+main p {
+    line-height: 1.7em;
+    text-align: justify;
+}
+main a {
+    color: #aabb44;
+}
+main a:hover {
+    color: #9b2;
+}
+footer p {
+    margin: 0;
+    padding-right: 30px;
+    color: #9b2;
+    line-height: 30px;
+    text-align: right;
 }
